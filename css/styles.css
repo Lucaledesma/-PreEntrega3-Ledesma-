@@ -118,6 +118,16 @@
     border-bottom: 2px solid var(--clr-azul);
     color: var(--clr-azul);
     padding: .8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.5rem;
+}
+
+.cantidad-productos {
+    display: flex;
+    gap: .5rem;
+    padding-right: 1rem;
 }
 
 .contenedor-carrito {
@@ -157,12 +167,17 @@
 .carrito-vacio,
 .carrito-compra {
     color: var(--clr-azul);
-    display: none;
 }
 
 .carrito-acciones{
     display: flex;
     justify-content: space-between;
+}
+
+.productos-del-carrito {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .carrito-comprar {
@@ -175,4 +190,8 @@
 .carrito-comprar-total {
     display: flex;
     gap: .5rem;
+}
+
+.disabled {
+    display: none;
 }
